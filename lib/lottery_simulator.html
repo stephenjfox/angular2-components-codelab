@@ -23,15 +23,16 @@
     <div class="clear-floats"></div>
   </div>
 
-  Progress: <strong>{{progress}}%</strong> <br>
-  <progress max="100" [value]="progress"></progress>
+  <material-progress [activeProgress]="progress" class="life-progress">
+  </material-progress>
 
   <div class="controls">
     <div class="controls__fabs">
       <button (click)="play()"
           [disabled]="endOfDays || inProgress"
-          id="play-button">
-        Play
+          id="play-button"
+          aria-label="Play">
+        <glyph icon="play_arrow"></glyph>
       </button>
 
       <button (click)="step()"
