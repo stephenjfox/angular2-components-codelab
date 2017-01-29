@@ -14,6 +14,8 @@ import 'package:components_codelab/settings/settings.dart';
   templateUrl: 'settings_component.html',
   directives: const [
     MaterialCheckboxComponent,
+    MaterialExpansionPanel,
+    MaterialExpansionPanelSet,
     MaterialRadioComponent,
     MaterialRadioGroupComponent,
     NgFor
