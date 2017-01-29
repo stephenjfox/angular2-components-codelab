@@ -4,6 +4,7 @@
 
 import 'package:angular2/core.dart';
 import 'package:angular2/src/common/directives.dart';
+import 'package:angular2_components/angular2_components.dart';
 import 'package:components_codelab/lottery/lottery.dart';
 import 'package:components_codelab/settings/settings.dart';
 
@@ -12,8 +13,12 @@ import 'package:components_codelab/settings/settings.dart';
   styleUrls: const ['settings_component.css'],
   templateUrl: 'settings_component.html',
   directives: const [
+    MaterialCheckboxComponent,
+    MaterialRadioComponent,
+    MaterialRadioGroupComponent,
     NgFor
   ],
+  providers: const [materialProviders]
 )
 class SettingsComponent implements OnInit {
   final initialCashOptions = [0, 10, 100, 1000];
